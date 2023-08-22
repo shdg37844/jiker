@@ -9,9 +9,7 @@ body {
     height: 100%;
 }
 
-img {
-    width: 100%;
-}
+
 
 .header-section {
     display: flex;
@@ -44,6 +42,7 @@ img {
     padding: 0px 15px 0px 30px;
     width: 688px;
     height: 36px;
+    outline: none;
     border: 0;
     background-color: rgb(245, 245, 245);
     border-radius: 4px 0px 0px 4px;
