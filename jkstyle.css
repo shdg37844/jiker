@@ -7,12 +7,20 @@
 html,
 body {
     height: 100%;
+    min-width: 1440px;
     -webkit-font-smoothing: antialiased;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
         Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
         sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* header部分 */
 .header-section {
@@ -199,22 +207,136 @@ input[type=text]::placeholder {
 }
 
 
+/* 主体部分 */
+.page-mainer {
+    min-height: 680px;
+}
+
 /* banner部分 */
-.banner-container {
+.banner-section {
     position: relative;
+}
+
+.banner-container {
     width: 100%;
+}
+
+/* 轮播图部分 */
+.banner-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-horizontal {
+    position: relative;
+}
+
+.carousel-container {
+    position: relative;
+    height: 380px;
+}
+
+.carousel-container-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner-carousel-item {
+    display: block;
     padding: 10px 66px;
-    max-width: 1920px;
-}
-
-.banner-background-img1 {
+    height: 100%;
+    width: 100%;
+    background-size: 1920px 380px;
+    background-repeat: no-repeat;
+    background-position: 50%;
     background-image: url(images/I1iOPrCq0ve7QUzRud3Wxk361vHc8l9FLM5VzzAz.png);
-}
-
-.banner-background-img2 {
     background-image: url(images/vjUW9OZGtT2koeBO9sNdUvxCSqLauPYYpnmWDWV0.png);
 }
 
+.carousel-indicators-outside {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    display: flex;
+    padding: 0;
+    margin-left: -340px;
+    z-index: 100;
+}
+
+.carousel-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.banner-line {
+    position: absolute;
+    bottom: -600px;
+    left: 50%;
+    margin-left: -620px;
+    z-index: 80;
+}
+
+.banner-line-item {
+    position: relative;
+    display: flex;
+    width: 15px;
+    height: 200px;
+}
+
+.banner-line-item:before {
+    position: absolute;
+    left: -50px;
+    top: -100px;
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 300px;
+    background-color: hsla(0, 0%, 59.2%, .3);
+}
+
+.banner-line-item:after {
+    top: -200px;
+    right: -50px;
+}
+
+
+
+
+
+
+.banner-float-ads {
+    position: absolute;
+    top: 55px;
+    right: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: -620px;
+    z-index: 80;
+}
+
+.banner-float-ads-img {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 210px;
+    height: 130px;
+    background-image: url(images/LXxQHaDxwhMFDllJXHBlvkV6Js2kfHZEbw07cmeZ.png);
+    background-size: 100% 100%;
+}
+
+
+
+/* 菜单部分 */
 .banner-content {
     position: absolute;
     top: 10px;
@@ -249,12 +371,19 @@ input[type=text]::placeholder {
     background-color: rgba(37, 34, 34, 0.5);
 }
 
-.menu-item-arrow {
+/* 右箭头 */
+.menu-item-nav:after {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: url(images/c25d52e.svg) no-repeat 0 0;
+    background-size: 9px 9px;
 }
+
 
 .banner-menu-item .menu-item-list {
     position: absolute;
@@ -269,7 +398,7 @@ input[type=text]::placeholder {
     color: white;
 }
 
-.menu-item-nav:hover .menu-item-list {
+.banner-menu-item:hover .menu-item-list {
     display: block;
 }
 
@@ -317,6 +446,7 @@ input[type=text]::placeholder {
     padding-left: 10px;
 }
 
+
 .menu-catalog-list .menu-catalog-dl .menu-catalog-dt:before {
     position: absolute;
     top: 50%;
@@ -331,7 +461,7 @@ input[type=text]::placeholder {
     background-color: #d8d8d8;
 }
 
-.menu-catalog-dl .menu-catalog-dt .menu-catalog-dd-list {
+.menu-catalog-dd-list {
     display: flex;
     flex-wrap: wrap;
     padding-left: 10px;
@@ -347,4 +477,20 @@ input[type=text]::placeholder {
     font-size: 14px;
     color: #fff;
     cursor: pointer;
+}
+
+/* 每个项目后面那根竖线 */
+.menu-catalog-dd:before {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #8c8c8d;
+}
+
+.menu-catalog-dd:last-child::before {
+    display: none;
 }
