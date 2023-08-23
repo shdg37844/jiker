@@ -41,17 +41,11 @@ a {
     align-items: center;
 }
 
-.header-logo {
+
+.header-logo img {
     width: 135px;
     height: 61px;
     margin-right: 54px;
-    height: 100%;
-}
-
-.header-logo img {
-    /* display: block; */
-    width: 100%;
-    height: 100%;
 }
 
 .header-right {
