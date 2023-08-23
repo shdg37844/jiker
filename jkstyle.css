@@ -302,36 +302,6 @@ input[type=text]::placeholder {
     cursor: pointer;
 }
 
-.banner-line {
-    position: absolute;
-    bottom: -600px;
-    left: 50%;
-    margin-left: -620px;
-    z-index: 80;
-}
-
-.banner-line-item {
-    position: relative;
-    display: flex;
-    width: 15px;
-    height: 200px;
-}
-
-.banner-line-item:before {
-    position: absolute;
-    left: -50px;
-    top: -100px;
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 300px;
-    background-color: hsla(0, 0%, 59.2%, .3);
-}
-
-.banner-line-item:after {
-    top: -200px;
-    right: -50px;
-}
 
 
 
