@@ -33,7 +33,6 @@ a {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05);
     z-index: 200;
     font-weight: 400;
-    height: 110px;
 }
 
 .header-section {
@@ -49,7 +48,7 @@ a {
 }
 
 .header-right {
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 
@@ -57,7 +56,6 @@ a {
     display: flex;
     justify-content: space-between;
     height: 36px;
-
 }
 
 .search-input {
@@ -104,20 +102,22 @@ input[type=text]::placeholder {
     border-color: transparent;
     background-color: #d8d8d8;
     border-radius: 0px 4px 4px 0px;
-    border: 0px 1px solid #d8d8d8;
+
 }
 
 
 .search-btn {
-    display: flex;
-    justify-content: center;
-    line-height: 1;
-    align-items: center;
-    padding: 12px 20px;
+    text-align: center;
+    line-height: 36px;
     width: 68px;
     height: 37px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(144, 147, 153);
     border: 0;
     background-color: transparent;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
 }
 
 .search-btn-container:hover {
@@ -128,12 +128,6 @@ input[type=text]::placeholder {
     color: white;
 }
 
-.search-btn span {
-    font-size: 13px;
-    font-family: Arial;
-    font-weight: 500;
-    color: rgb(144, 147, 153);
-}
 
 .header-right-top-right {
     width: 105px;
@@ -142,9 +136,6 @@ input[type=text]::placeholder {
     text-align: center;
     font-size: 12px;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
-        Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
-        sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     color: white;
     background-color: #1e1e1e;
 }
@@ -158,6 +149,7 @@ input[type=text]::placeholder {
     justify-content: space-between;
     padding-top: 19px;
     width: 1051px;
+    line-height: 22px;
 }
 
 .header-bottom-left {
@@ -172,6 +164,7 @@ input[type=text]::placeholder {
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+
 }
 
 .header-nav-item:not(:nth-child(6)) {
@@ -193,8 +186,8 @@ input[type=text]::placeholder {
 
 .header-bottom-right {
     display: flex;
-    align-items: start;
-    height: 38px;
+    align-items: center;
+    /* height: 38px; */
 }
 
 
@@ -206,19 +199,16 @@ input[type=text]::placeholder {
     color: #858585;
     font-size: 14px;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
-        Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
-        sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     cursor: pointer;
 }
 
-.header-redbeg {
+.item-redbeg {
     margin-right: 8px;
     width: 17px;
     height: 20px;
 }
 
-.header-community {
+.item-community {
     margin-right: 8px;
     width: 20px;
     height: 20px;
@@ -233,7 +223,7 @@ input[type=text]::placeholder {
 /* banner部分 */
 .banner-section {
     position: relative;
-    background-color: black;
+    background-color: #252222;
 }
 
 .banner-container {
@@ -296,9 +286,6 @@ input[type=text]::placeholder {
     cursor: pointer;
 }
 
-
-
-
 .banner-float-ads {
     position: absolute;
     top: 55px;
@@ -328,12 +315,8 @@ input[type=text]::placeholder {
     margin-left: -620px;
     width: 210px;
     height: 360px;
-    z-index: 100;
 }
 
-.banner-menu-item {
-    transition: all .5s;
-}
 
 .menu-item-arrow img {
     width: 20px;
@@ -372,7 +355,6 @@ input[type=text]::placeholder {
     display: none;
     top: 0;
     left: 210px;
-    z-index: 100;
     min-height: 360px;
     width: 722px;
     background: #222;
@@ -393,15 +375,6 @@ input[type=text]::placeholder {
     font-weight: 400;
 }
 
-.banner-menu-item .menu-item-list .menu-item-bg-warp {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(34, 34, 34, .1) 366px, hsla(0, 0%, 100%, .3));
-    z-index: -1;
-    top: 0;
-    left: 0;
-}
 
 .menu-catalog-list {
     display: flex;
@@ -432,7 +405,6 @@ input[type=text]::placeholder {
     position: absolute;
     top: 50%;
     left: 0;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     content: "";
     width: 4px;
@@ -478,4 +450,138 @@ input[type=text]::placeholder {
 
 .menu-catalog-list .menu-catalog-dl .menu-catalog-dd-list .menu-catalog-dd:hover {
     color: #0fc700;
+}
+
+/* ads部分 */
+/* course课程部分 */
+.ads-section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.ads-section-course {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.ads-course-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 1240px;
+}
+
+.course-left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 925px;
+}
+
+.course-left-img.git,
+.course-left-img.vue {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.course-left-img.kafka {
+    margin-bottom: 10px;
+}
+
+.course-left-img.zookeeper,
+.course-left-img.redis {
+    margin-right: 20px;
+}
+
+.course-left-git {
+    width: 295px;
+    height: 56px;
+    background: url(images/qglpEUpYaqoctLEaGGXqSxzPkFOwlz5UYnhLkZoP.png) center center / 295px 56px no-repeat rgb(180, 182, 195);
+
+}
+
+.course-left-vue {
+    width: 295px;
+    height: 56px;
+    background: url(images/1YrRmGJqxznaBIEEPzWr3GEk0dlZJXrQQEaRR148.png) center center / 295px 56px no-repeat rgb(180, 182, 195);
+}
+
+.course-left-kafka {
+    width: 295px;
+    height: 56px;
+    background: url(images/IwSvKLfzcKK3PVP7b6nbZ0YSJZifJfeOxie3Xj7w.png) center center / 295px 56px no-repeat rgb(180, 182, 195);
+
+}
+
+.course-left-zookeeper {
+    width: 295px;
+    height: 56px;
+    background: url(images/mEGFRdbsJkOaXZrzSQ74KDN0NaBnmvTRXXSsN9JI.png) center center / 295px 56px no-repeat rgb(180, 182, 195);
+}
+
+.course-left-redis {
+    width: 295px;
+    height: 56px;
+    background: url(images/0dxGFdTInGVivUIAVo9QWmA6NKTKI558ilMZcw0K.png) center center / 295px 56px no-repeat rgb(180, 182, 195);
+}
+
+.course-left-operation {
+    width: 295px;
+    height: 56px;
+    background: url(images/H59qIJo99sJVUGtzmCNZs5KYzvjNLs1hVZ4fsV9N.png) center center / 295px 56px no-repeat rgb(180, 182, 195);
+}
+
+.course-right {
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+    margin-left: 20px;
+}
+
+.course-right-box {
+    position: relative;
+}
+
+.course-right-img {
+    display: inline-block;
+    background-size: 100% 100%;
+}
+
+.course-right-community {
+    width: 142px;
+    height: 122px;
+    background: url(images/6d3a68e.svg);
+}
+
+.course-right-feishu {
+    width: 142px;
+    height: 122px;
+    background: url(images/A9NvGuuLAG40YnSPZw4MEOnNfEB7hDaJTLB8gjP3.png) center center / 142px 122px no-repeat rgb(180, 182, 195);
+}
+
+
+.course-right-code {
+    position: absolute;
+    bottom: 54px;
+    left: -9px;
+    display: none;
+    width: 160px;
+    height: 205px;
+    text-align: center;
+    background-image: url(images/21ce563.svg);
+}
+
+.course-right-code img {
+    width: 120px;
+    height: 120px;
+}
+
+.code-title {
+    padding: 15px 0 6px;
+    font-size: 11px;
+}
+
+.course-right-box:hover .course-right-code {
+    display: block;
 }
