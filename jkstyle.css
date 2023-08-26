@@ -677,3 +677,190 @@ input[type=text]::placeholder {
     height: 220px;
     background: url(images/1ZPkO79Bx4IeSKLhzT3DtPPGfQJLy7gX0VCvXrd7.png) center center / 1440px 220px no-repeat rgb(180, 182, 195);
 }
+
+/* career-plus部分 */
+.career-plus-section {
+    background-color: #f5f5f5;
+}
+
+.career-plus-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section-sub-flex {
+    display: flex;
+    align-items: center;
+    padding: 40px 0 20px;
+}
+
+.section-sub-hd {
+    margin-right: 12px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #333;
+    line-height: 26px;
+}
+
+.section-sub-flex .section-sub-bd {
+    line-height: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.section-sub-link {
+    display: flex;
+    align-items: center;
+}
+
+.more-black-arrow {
+    display: inline-block;
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(images/36330ef.svg);
+    background-repeat: no-repeat;
+}
+
+.plus {
+    display: flex;
+}
+
+.plus-item {
+    margin-right: 20px;
+    width: 295px;
+    background-color: #fff;
+}
+
+.card-plus-content-top {
+    position: relative;
+}
+
+.cover-img.first {
+    width: 295px;
+    height: 170px;
+    background: url(images/Qy1PV1Ddz8V8K9wYBChIujgbeUda0zhVbet3EBE9.png) center center / 295px 170px no-repeat rgb(180, 182, 195);
+}
+
+.cover-img.second {
+    width: 295px;
+    height: 170px;
+    background: url(images/E3Zjb0NfMcajCxTtpx3GJ1x01Vs2VvdtU6ECwOmJ.png) center center / 295px 170px no-repeat rgb(180, 182, 195);
+}
+
+.card-plus-tag {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    display: inline-block;
+    width: 95px;
+    height: 30px;
+    background: url(images/d6895d3.svg);
+}
+
+.card-plus-content-bottom {
+    padding: 17px 25px 30px;
+}
+
+.card-plus-time {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+
+.card-plus-time-item {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
+
+.time-icon {
+    display: inline-block;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(images/10c37ef.svg);
+    background-repeat: no-repeat;
+}
+
+.separate {
+    display: inline-block;
+    margin-left: 10px;
+    transform: rotate(90deg);
+    color: #999;
+}
+
+.card-plus-description {
+    margin: 13px 0 18px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+
+.card-plus-user {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.career-icon {
+    display: inline-block;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+
+    background: url(images/8c0abb4.svg);
+    background-repeat: no-repeat;
+}
+
+.career-name {
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.career-item-img {
+    margin-bottom: 20px;
+}
+
+.career {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 610px;
+}
+
+.career-item-img.python {
+    width: 295px;
+    height: 170px;
+    background: url(images/PgKoQwpaiVVgjwn1SRrZA4Zweuvt61mbkJUEzgO8.png) center center / 295px 170px no-repeat rgb(180, 182, 195);
+}
+
+.career-item-img.analyst {
+    width: 295px;
+    height: 170px;
+    background: url(images/9xaW9n53TLogaRQ0M1iGdHQZf0dYqIh6px5hfskM.png) center center / 295px 170px no-repeat rgb(180, 182, 195);
+}
+
+.career-item-img.web {
+    width: 295px;
+    height: 170px;
+    background: url(images/mZdnKXEbYuGo7qqRqk2CIqKaDUUBi17kKFs40sej.png) center center / 295px 170px no-repeat rgb(180, 182, 195);
+}
+
+.career-item-img.java {
+    width: 295px;
+    height: 170px;
+    background: url(images/vfn7XnNL5vN396ztHxnSYMWQXLbg4W86D0EPPpCj.png) center center / 295px 170px no-repeat rgb(180, 182, 195);
+}
+
+
+
+
+
+
+
+
+/* career部分 */
