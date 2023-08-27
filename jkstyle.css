@@ -1509,3 +1509,80 @@ input[type=text]::placeholder {
 .copyright-link {
     color: #8e8e8e;
 }
+
+/* invite部分 */
+.invite-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 81px;
+    color: #fff;
+    background-color: #0ca800;
+}
+
+.invite-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 81px;
+}
+
+.invite-section-left {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.invite-section-left:before {
+    content: "";
+    display: inline-block;
+    width: 154px;
+    height: 76px;
+    background-image: url(images/39594a9.svg);
+    background-size: 100% 100%;
+}
+
+.invite-section-left span {
+    font-weight: 700;
+}
+
+.invite-section-right {
+    display: flex;
+    align-items: center;
+}
+
+.invite-btn {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+}
+
+.arrow-icon-right {
+    margin-left: 10px;
+    width: 10px;
+    height: 14px;
+    display: inline-block;
+    background: url(images/arrowright.svg);
+    background-repeat: no-repeat;
+}
+
+.close-icon {
+    content: "";
+    display: inline-block;
+    margin-left: 46px;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/ac5e1b6.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
