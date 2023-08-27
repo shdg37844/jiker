@@ -865,7 +865,7 @@ input[type=text]::placeholder {
 
 /* course部分 */
 .course-section {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     background-color: #f5f5f5;
 }
 
@@ -1298,4 +1298,214 @@ input[type=text]::placeholder {
 
 .course-more:hover {
     opacity: .8;
+}
+
+/* footer部分 */
+.footer-section {
+    padding: 50px 100px 57px;
+    background-color: #252222;
+}
+
+.footer-container {
+    max-width: 1240px;
+    margin: 0 auto;
+
+}
+
+.footer-vertical_top {
+    display: flex;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #414141;
+}
+
+.logo-container {
+    text-align: left;
+    margin-right: 128px;
+}
+
+.logo-header {
+    width: 156px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.logo-desc {
+    height: 17px;
+    line-height: 17px;
+    font-size: 12px;
+    color: #bbb;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.phone-title {
+    height: 22px;
+    margin-bottom: 6px;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.phone-number {
+    height: 28px;
+    line-height: 28px;
+    font-size: 20px;
+    color: #d5d5d5;
+    margin-bottom: 11px;
+}
+
+.footer-button {
+    display: inline-block;
+    height: 43px;
+    background-color: #333;
+    text-align: center;
+    font-size: 12px;
+    line-height: 43px;
+    color: #fff;
+}
+
+.footer-button:hover {
+    background-color: #555;
+}
+
+.footer-button.phone-contact {
+    width: 144px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.nav-list {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.item-title {
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.nav-item {
+    margin-right: 12px;
+    height: 20px;
+    line-height: 20px;
+    color: #d5d5d5;
+    font-size: 14px;
+}
+
+.nav-item:hover {
+    color: #fff;
+}
+
+.cooperate-container {
+    margin-right: 54px;
+    width: 383px;
+}
+
+.footer-sub-title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    /* text-align: left; */
+    color: #fff;
+}
+
+.cooperate-logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cooperate-logos img {
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.serve-container {
+    width: 144px;
+}
+
+.footer-button.serve-button {
+    width: 144px;
+    margin-bottom: 8px;
+}
+
+.enterprise-icon {
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    background: url(images/5399c3d.svg);
+}
+
+.serve-session-tip {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    color: #d5d5d5;
+}
+
+.school-icon {
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    background: url(images/684aa50.svg);
+}
+
+.footer-vertical_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.social-container {
+    display: flex;
+}
+
+.sina-icon {
+    display: inline-block;
+    margin-right: 25px;
+    width: 32px;
+    height: 32px;
+    background: url(images/56b6ce7.svg) 0 0 no-repeat;
+}
+
+.twitter-icon {
+    display: inline-block;
+    margin-right: 25px;
+    width: 32px;
+    height: 32px;
+    background: url(images/8e3e38a.svg) 0 0 no-repeat;
+}
+
+.github-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(images/4297efa.svg) 0 0 no-repeat;
+}
+
+.copyright-container {
+    height: 17px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #8e8e8e;
+}
+
+.copyright-link {
+    color: #8e8e8e;
 }
